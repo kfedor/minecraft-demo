@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "mfproto",
+  "version": "${version}",
+  "name": "MF Proto Demo",
+  "description": "Client screen sends protobuf to server; server writes to Postgres",
+  "license": "MIT",
+  "entrypoints": {
+    "main": [
+      "com.github.kfedor.minecraft.mod.ModMain"
+    ],
+    "client": [
+      "com.github.kfedor.minecraft.mod.ModClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.8",
+    "fabric-api": "*"
+  }
+}
