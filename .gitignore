@@ -1,39 +1,21 @@
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### IntelliJ IDEA ###
+cat > .gitignore <<'EOF'
+# IntelliJ IDEA
 .idea/
-*.iws
 *.iml
-*.ipr
+
+# Gradle
+.gradle/
+build/
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+run/
+logs/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# Minecraft Fabric
+remappedMods/
+.remapped/
+dev/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
+# OS
 .DS_Store
+Thumbs.db
+EOF
